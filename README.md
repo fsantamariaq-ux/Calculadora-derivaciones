@@ -5,20 +5,8 @@ Foto de nuestro hermoso equipo.
 
 PARA USAR LA APP
 ----------------
-Haz doble clic en:  CalculadoraDerivadas.exe
+Descargala de la pestaña de Releases:  CalculadoraDerivadas.exe
 (No necesitas instalar Python ni nada. Funciona sola.)
-
-
-QUÉ HAY EN ESTA CARPETA
------------------------
-- CalculadoraDerivadas.exe : la aplicación lista para usar.
-- DOCUMENTACION.md         : documento técnico (referencia general del proyecto).
-- PASO-A-PASO.md           : documento FORMAL del paso a paso de la construccion,
-                             con las bases matematicas y logicas justificadas.
-                             (Este es el que sirve para el informe/sustentacion.)
-- codigo-fuente/           : el código, por si algún día quieres editarlo
-                             o volver a compilar el .exe.
-
 
 CÓMO SE USA LA APP
 ------------------
