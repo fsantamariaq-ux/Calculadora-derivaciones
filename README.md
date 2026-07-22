@@ -1,6 +1,7 @@
 CALCULADORA DE DERIVADAS
 ========================
-
+![Foto_Equipo](docs/FOTO-EQUIPO.jpg)
+========================
 PARA USAR LA APP
 ----------------
 Haz doble clic en:  CalculadoraDerivadas.exe
