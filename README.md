@@ -1,2 +1,0 @@
-# Calculadora-derivaciones
-calculadora 
