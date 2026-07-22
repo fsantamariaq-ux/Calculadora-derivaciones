@@ -39,4 +39,5 @@ VERSIÓN FINAL
 Incluye: notacion colombiana, teclado matematico, multiplicacion implicita,
 auto-limpiado, deteccion completa de reglas, imagen en indeterminaciones,
 y seguridad reforzada (probada contra ataques).
-[Descarga el informe técnico aquí.]([https://cdn.discordapp.com/attachments/1242286387475255307/1529348917576204308/Informe_Tecnico.pdf?ex=6a619cab&is=6a604b2b&hm=ad38586e133d9f9d9cebb635cfbf549219efbd3f46053f1b91bfb1f3c93fa46d&])
+-------------
+[Descarga el informe técnico aquí.](./docs/Informe_Tecnico.pdf)
