@@ -3,6 +3,12 @@ CALCULADORA DE DERIVADAS
 ![Foto_Equipo](docs/FOTO-EQUIPO.jpg)
 Foto de nuestro hermoso equipo.
 
+-Gabriel Eduardo Cely Coronado
+-Yasser Nicolas Gómez Montes
+-Juanita Valentina Rodríguez Villamil
+-Lucas Gabriel Romero Montero
+-Felipe Santamaría Quiroga
+
 PARA USAR LA APP
 ----------------
 Descargala de la pestaña de Releases:  CalculadoraDerivadas.exe
