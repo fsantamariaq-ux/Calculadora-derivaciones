@@ -1,0 +1,211 @@
+/*
+  style.qss — Calculadora de Derivadas
+  ---------------------------------------------------------
+  Dirección de diseño: EDITORIAL (revista de matemáticas).
+  Fondo papel cálido, tipografía serif Fraunces + IBM Plex Mono,
+  acento rojo óxido, líneas finas, secciones numeradas.
+
+  Familias de fuente (embebidas desde assets/fonts, cada peso
+  se registra como una familia propia):
+    "Fraunces"            -> serif regular (reglas, botón en cursiva)
+    "Fraunces SemiBold"   -> serif del resultado (la derivada)
+    "Fraunces Black"      -> serif del wordmark d/dx (cursiva)
+    "IBM Plex Mono"       -> mono para etiquetas, secciones e input
+
+  TOKENS DE COLOR:
+    #F2EEE3  papel (fondo)
+    #1B1A17  tinta (texto principal)
+    #9E3B2E  acento rojo óxido
+    #C7BEAB  línea fina de input
+    #D6CDBB  línea fina divisoria de reglas
+    #B8AF9C  número tenue de regla
+    #8A8577  texto tenue (interpretación)
+*/
+
+QWidget#central {
+    background-color: #F2EEE3;
+}
+
+QScrollArea#scroll {
+    background-color: #F2EEE3;
+    border: none;
+}
+
+/* --- Teclado matemático (numpad) --- */
+QPushButton#key {
+    font-family: "IBM Plex Mono";
+    font-size: 15px;
+    color: #1B1A17;
+    background-color: #F7F3EA;
+    border: 1px solid #D9D0BE;
+    border-radius: 7px;
+    padding: 7px 0;
+}
+
+QPushButton#key:hover {
+    color: #9E3B2E;
+    border: 1px solid #9E3B2E;
+    background-color: #EFE9DC;
+}
+
+QPushButton#key:pressed {
+    background-color: #E6DECF;
+}
+
+/* Botones de borrado (DEL, C) en rojo */
+QPushButton#keyDelete {
+    font-family: "IBM Plex Mono";
+    font-size: 15px;
+    color: #B03A2E;
+    background-color: #F6E7E2;
+    border: 1px solid #D8B3AA;
+    border-radius: 7px;
+    padding: 7px 0;
+}
+
+QPushButton#keyDelete:hover {
+    color: #FFFFFF;
+    background-color: #B03A2E;
+    border: 1px solid #B03A2E;
+}
+
+QPushButton#keyDelete:pressed {
+    background-color: #8F2E24;
+}
+
+/* Botón de la variable x en verde */
+QPushButton#keyVar {
+    font-family: "IBM Plex Mono";
+    font-size: 15px;
+    color: #1B7A50;
+    background-color: #E4F0E8;
+    border: 1px solid #A9CBB7;
+    border-radius: 7px;
+    padding: 7px 0;
+}
+
+QPushButton#keyVar:hover {
+    color: #FFFFFF;
+    background-color: #1B7A50;
+    border: 1px solid #1B7A50;
+}
+
+QPushButton#keyVar:pressed {
+    background-color: #145F3E;
+}
+
+QPushButton#keyAccent {
+    font-family: "Fraunces";
+    font-style: italic;
+    font-size: 17px;
+    color: #F2EEE3;
+    background-color: #9E3B2E;
+    border: none;
+    border-radius: 7px;
+    padding: 7px 0;
+}
+
+QPushButton#keyAccent:hover {
+    background-color: #82301F;
+}
+
+QPushButton#keyAccent:pressed {
+    background-color: #6E2819;
+}
+
+/* --- Encabezado --- */
+QLabel#wordmark {
+    font-family: "Fraunces Black";
+    font-style: italic;
+    font-size: 22px;
+    color: #1B1A17;
+}
+
+QLabel#kicker {
+    /* fuente + tracking se fijan por código (QSS no soporta letter-spacing) */
+    color: #9E3B2E;
+}
+
+QFrame#ruleStrong {
+    background-color: #1B1A17;
+    border: none;
+}
+
+/* --- Etiquetas de sección (01 · FUNCIÓN, etc.) --- */
+QLabel#sectionTag {
+    /* fuente + tracking se fijan por código (QSS no soporta letter-spacing) */
+    color: #9E3B2E;
+}
+
+/* --- Entrada --- */
+QLineEdit#funcionInput {
+    font-family: "IBM Plex Mono";
+    font-size: 18px;
+    color: #1B1A17;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #C7BEAB;
+    padding: 6px 2px;
+}
+
+QLineEdit#funcionInput:focus {
+    border-bottom: 1px solid #9E3B2E;
+}
+
+QPushButton#derivarBtn {
+    font-family: "Fraunces";
+    font-style: italic;
+    font-size: 16px;
+    color: #9E3B2E;
+    background: transparent;
+    border: none;
+    padding: 6px 4px;
+}
+
+QPushButton#derivarBtn:hover {
+    color: #1B1A17;
+}
+
+QLabel#interpretedLine {
+    font-family: "IBM Plex Mono";
+    font-size: 11px;
+    color: #8A8577;
+}
+
+/* --- Resultado (la derivada) --- */
+QLabel#derivada {
+    font-family: "Fraunces SemiBold";
+    font-size: 30px;
+    color: #1B1A17;
+    border-left: 3px solid #9E3B2E;
+    padding: 2px 0 2px 16px;
+}
+
+/* --- Reglas aplicadas --- */
+QFrame#reglaRow {
+    border: none;
+    border-bottom: 1px solid #D6CDBB;
+}
+
+QFrame#reglaRowLast {
+    border: none;
+}
+
+QLabel#reglaNum {
+    font-family: "Fraunces";
+    font-size: 15px;
+    color: #B8AF9C;
+}
+
+QLabel#reglaText {
+    font-family: "Fraunces";
+    font-size: 17px;
+    color: #1B1A17;
+}
+
+/* --- Línea de error --- */
+QLabel#errorLine {
+    font-family: "IBM Plex Mono";
+    font-size: 12px;
+    color: #9E3B2E;
+}
