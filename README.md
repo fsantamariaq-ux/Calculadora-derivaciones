@@ -3,6 +3,8 @@ CALCULADORA DE DERIVADAS
 ![Foto_Equipo](docs/FOTO-EQUIPO.jpg)
 Foto de nuestro hermoso equipo.
 
+INTEGRANTES:
+
 -Gabriel Eduardo Cely Coronado
 
 -Yasser Nicolas Gómez Montes
