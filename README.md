@@ -1,5 +1,6 @@
 CALCULADORA DE DERIVADAS
 ========================
+Foto de nuestro hermoso equipo.
 ![Foto_Equipo](docs/FOTO-EQUIPO.jpg)
 ========================
 PARA USAR LA APP
