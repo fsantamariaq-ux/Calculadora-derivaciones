@@ -42,4 +42,4 @@ Incluye: notacion colombiana, teclado matematico, multiplicacion implicita,
 auto-limpiado, deteccion completa de reglas, imagen en indeterminaciones,
 y seguridad reforzada (probada contra ataques).
 -------------
-[Descarga el informe técnico aquí.](./docs/Informe_Tecnico.pdf)
+[Descarga el informe técnico aquí.](./docs/Informe-Tecnico.pdf)
